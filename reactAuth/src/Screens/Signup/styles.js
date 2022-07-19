@@ -5,11 +5,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#B0E0E6',
     width: '100%',
     height: '100%',
+   
+    
 },
   header: {
     fontFamily: 'times-new',
     fontSize: 24,
-    color: 'black',
+    color: 'steelblue',
 }
 
 

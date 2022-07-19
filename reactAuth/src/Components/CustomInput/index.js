@@ -1,11 +1,15 @@
 import { View, TextInput  } from 'react-native';
-import React from 'react'
+import React, { useState } from 'react'
 
-const CustomInput = () => {
+const CustomInput = ({placeholder}) => {
+  const[userName,setUserName]=useState('')
+  const[password,setPassword]=useState('')
+
+
   return (
     <View>
-      <View style={{backgroundColor: 'white', width: '50%', padding: 10}}>
-        <TextInput placeholder="Enter your mail id"></TextInput>
+      <View style={{backgroundColor: 'white',alignItems:'center', alignSelf:'center',width: '70%', margin:5,borderRadius:15}}>
+        <TextInput onChangeText={(e)=>  placeholder=="Password"?setPassword(e):setUserName(e)} style={{color:'steelblue'}} placeholder={placeholder}></TextInput>
         </View>
      
     </View>

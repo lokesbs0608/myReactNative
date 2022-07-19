@@ -1,22 +1,28 @@
 import {View, TouchableOpacity, Text} from 'react-native';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const CustomButtton = ({lable}) => {
-    console.log(lable);
+  const handlevalidation=()=>{
+    alert("hello")
+  }
+
+   
   return (
     <View>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={handlevalidation} >
         <View
           style={{
             borderWidth: 1,
+            height:50,
+            width:"35%",  
             backgroundColor: 'skyblue',
-            borderColor: 'powder-blue',
-            width: '50%',
-
+            borderColor: 'powderblue',
+            borderRadius:10,
             alignSelf: 'center',
+            justifyContent:'center',
             alignItems: 'center',
           }}>
-          {<Text>{lable}</Text>}
+          <Text style={{color:'steelblue'}}>{lable}</Text>
         </View>
       </TouchableOpacity>
     </View>

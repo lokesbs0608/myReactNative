@@ -4,13 +4,21 @@ import styles from './styles';
 import CustomButtton from '../../Components/CustomButton';
 import CustomInput from '../../Components/CustomInput'
 const Signup = () => {
+
   return (
     <View style={styles.container}>
       <View style={{alignItems: 'center'}}>
-        <Text style={styles.header}>Signup</Text>
+        <Text style={styles.header}>Sign In</Text>
       </View>
-      <CustomButtton lable="Signup" />
-      <CustomInput/>
+      <View style={{top:100,}}>
+      <CustomInput placeholder="User Name"/>
+      <CustomInput placeholder="Password"/>
+      <CustomButtton lable="Sign up" 
+      userNameValidation={"userName"}
+      passwordValidation={"password"}
+      />
+      </View>
+     
     </View>
   );
 };
