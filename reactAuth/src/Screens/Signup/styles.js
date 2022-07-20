@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     
 },
   header: {
-    fontFamily: 'times-new',
+    fontFamily: 'times',
     fontSize: 24,
     color: 'steelblue',
 }
