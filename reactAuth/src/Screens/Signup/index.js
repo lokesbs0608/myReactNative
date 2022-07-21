@@ -1,25 +1,45 @@
-import {Text, View} from 'react-native';
+import {Text, View,useWindowDimensions, SafeAreaView} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import CustomButtton from '../../Components/CustomButton';
 import CustomInput from '../../Components/CustomInput'
+
 const Signup = () => {
+  
 
   return (
-    <View style={styles.container}>
-      <View style={{alignItems: 'center'}}>
-        <Text style={styles.header}>Sign In</Text>
+    <SafeAreaView>
+    <View style={[styles.container,{}]}>
+      <View>
+        <Text style={{color:'steelblue',fontSize:18,fontFamily:'futura',padding:10,fontWeight:'bold'}}>Video stream</Text>
       </View>
-      <View style={{top:100,}}>
-      <CustomInput placeholder="User Name"/>
-      <CustomInput placeholder="Password"/>
-      <CustomButtton lable="Sign up" 
+      <View style={{flex:.5,justifyContent:'center'}} >
+      <View style={{alignItems: 'center'}}>
+      </View>
+      <View style={{justifyContent:'center'}}>
+      <CustomInput placeholder="Enter User Email" />
+      <CustomInput placeholder="Enter Password"/>
+      <CustomInput placeholder="Enter your Number" type="number-pad" />
+      <CustomInput placeholder="Enter your Name" />
+     
+       <View style={{flexDirection:'row',justifyContent:'space-evenly',}}>
+       
+       <CustomButtton lable="Sign up" 
       userNameValidation={"userName"}
       passwordValidation={"password"}
+
       />
-      </View>
+      <CustomButtton lable="Login" 
+      userNameValidation={"userName"}
+      passwordValidation={"password"}
      
+      />
+       </View>
+       
+      </View>
+      </View>  
     </View>
+    </SafeAreaView>
   );
 };
 

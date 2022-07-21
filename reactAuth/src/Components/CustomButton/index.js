@@ -14,7 +14,8 @@ const CustomButtton = ({lable}) => {
           style={{
             borderWidth: 1,
             height:50,
-            width:"35%",  
+            width:"150%",  
+            padding:15,
             backgroundColor: 'skyblue',
             borderColor: 'powderblue',
             borderRadius:10,

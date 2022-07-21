@@ -1,6 +1,8 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet,Dimensions} from 'react-native';
+
 
 const styles = StyleSheet.create({
+  
   container: {
     backgroundColor: '#B0E0E6',
     width: '100%',
